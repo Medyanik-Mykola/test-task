@@ -1,0 +1,14 @@
+.section{
+    margin-top: 302px;
+    margin-left: 108px;
+    margin-right: 108px;
+    width: 1064px;
+
+    @media screen and (max-width:1200px) {
+        margin-top: 150px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        }
+
+}

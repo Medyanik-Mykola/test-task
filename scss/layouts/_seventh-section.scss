@@ -1,0 +1,26 @@
+.man_with_laptop {
+    position: relative;
+    left: -35px;
+
+    @media screen and (max-width: 768px) {
+        top: 20px;
+        left: 0px;
+        width: 110%;
+    }
+       
+}
+
+.wider {
+    width: 478px;
+
+    .wider-bth {
+        padding: 6px 0px;
+        width: 233px;
+        height: 33px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        max-width: 400px;
+    }
+}

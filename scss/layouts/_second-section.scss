@@ -1,0 +1,166 @@
+.section {
+    &.second-section {
+        background-color: #070707;
+        height: 463px;
+        padding: 60px 50px;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            height: auto; 
+            padding: 40px 20px;
+        }
+    }
+}
+
+.about-us-container {
+    width: 500px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 40px;
+
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+}
+
+.button {
+    &.start-button {
+        background-color: var(--color-main-light);
+        color: var(--color-main-dark);
+        padding: 13px 75px 13px 32px;
+        position: relative;
+        top: 36px;
+
+
+        &::after {
+            content: url("/src/Forward.svg");
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            position: absolute;
+            right: 32px;
+            bottom: 17.5px;
+        }
+
+        &:hover::after {
+            content: url("/src/Forward_white.svg");
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 10px 50px; 
+            font-size: 16px;
+            display: block;
+            width: 35%;
+            position: static;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 10px;
+         }
+    }
+}
+
+.start-button:hover,
+.log-in:hover,
+.services-button:hover {
+    background-color: var(--color-white-translucent);
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        font-weight: 800;
+        font-size: 28px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px; 
+        }
+    }
+}
+
+.advantages-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1200px) {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: row; 
+        }
+    }
+}
+
+main {
+    padding-left: 108px;
+    padding-right: 108px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.card-heading,
+.about-us-heading,
+.services-heading {
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px; 
+    }
+}
+
+.card-text,
+.about-us-text,
+.services-text {
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px; 
+    }
+}

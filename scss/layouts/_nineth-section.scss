@@ -1,0 +1,95 @@
+.preview {
+    font-size: 20px;
+    color: var(--color-main-dark);
+}
+
+.feedback-container {
+    height: 330px;
+    background-color: var(--color-main-dark);
+    padding: 50px 18px;
+    justify-content: space-around;
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+        height: 100%;
+        align-items: center;
+        padding: 40px 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 10px;
+    }
+}
+
+.feedback-container-personal {
+    padding-top: 30px;
+    padding-left: 50px;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+.feedback-container-personal::after {
+    content: '“';
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 60px;
+        top: -10px;
+    }
+}
+
+.dec-line::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 211px;
+    position: absolute;
+    background-color: var(--color-main-light);
+    top: 2px;
+    left: -14px;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.feedback-text {
+    font-size: 16px;
+    width: 253px;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+.feedback-text-name {
+    font-size: 20px;
+    margin-top: 45px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}
+
+.feedback-text-profession {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}

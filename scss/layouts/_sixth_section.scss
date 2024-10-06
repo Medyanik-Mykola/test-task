@@ -1,0 +1,63 @@
+.sixth-section{
+    height: 100%; 
+}
+
+.sixth-black{
+    top: 36px;
+}
+
+.full_photo{
+    padding: 60px 40px;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+            display: none;
+        }
+}
+
+.full_photo::after{
+    content: url("/src/Line_sixth.svg");
+    display: block;
+}
+
+.extra-block{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exta-text{
+    font-size: 18px;
+    padding: 4px 17px;
+    border: 1px solid var(--color-main-dark);
+
+    @media screen and (max-width: 500px) {
+            font-size: 12px;
+            padding: 4px;
+        }
+}
+.controls{
+    display: flex;
+    padding: 5px 24px;
+    justify-content: space-between;
+    background-color: var(--color-main-dark);
+    color: var(--color-main-light);
+    font-size: 10px;
+    width: 370px;
+    border-radius: 0px 0px 15px 15px;
+    height: 20px;
+    font-weight: 800;
+    @media screen and (max-width: 500px) {
+            width: 50%;
+            padding: 4px;
+        }
+}
+
+.previus, .next{
+    position: relative;
+    top: -1px;
+}
+
+.previus{
+    transform: rotate(90deg);
+}

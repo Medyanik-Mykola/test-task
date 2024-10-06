@@ -1,0 +1,15 @@
+.container {
+    border-radius: 40px;
+    width: 1064px;
+    display: flex;
+
+    @media (max-width: 768px) {
+        width: 100%; 
+        flex-direction: column; 
+    }
+
+    @media (max-width: 480px) {
+        width: 95%; 
+    }
+
+}

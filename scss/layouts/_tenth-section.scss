@@ -1,0 +1,87 @@
+.input-container {
+    background-color: var(--color-light-gray);
+    height: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-main-dark);
+    flex-direction: row;
+
+    @media screen and (max-width: 1200px) {
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+form{
+    @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+}
+
+.input-info {
+    width: 100%;
+    max-width: 445px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.input-form {
+    width: 100%;
+    max-width: 415px;
+    height: auto;
+}
+
+.input-info p {
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.input-form p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.input-form-politic {
+    text-decoration: underline;
+}
+
+.input-form-log-in {
+    background-color: var(--color-main-dark);
+    color: var(--color-main-light);
+    padding: 16px 108px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+
+    @media screen and (max-width: 768px) {
+        padding: 12px 60px;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 12px;
+        font-size: 12px;
+        width: auto;
+    }
+}
+
+.input-form-log-in:hover {
+    background-color: var(--color-white-translucent);
+    color: black;
+}
+

@@ -1,0 +1,29 @@
+.heading {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--color-black);
+    font-family: "Jost", sans-serif;
+    margin-bottom: 40px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 28px;
+            }
+}
+
+.heading span {
+    font-weight: 900;
+    font-size: 52px;
+    @media screen and (max-width: 500px) {
+            font-size: 28px;
+        }
+}
+
+section{
+    position: relative;
+}
+
+.number{
+    position: absolute;
+    top: -90px;
+    left: 0px;
+}
